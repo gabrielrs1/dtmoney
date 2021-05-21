@@ -20,13 +20,14 @@ function App() {
 
   return (
     <>
-      <GlobalStyle />
       <Header onOpenNewTrasactionModal={handleOpenNewTransactionModal} />
       <Dashboard />
       <NewTransactionModal 
        isOpen={isNewTransactionModalOpen} 
        onRequestClose={handleCloseNewTransactionModal}
       />
+
+      <GlobalStyle />
     </>
   );
 }
